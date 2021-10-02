@@ -5,6 +5,13 @@ var randomColor;
 var counter = -1;
 var level=0;
 var ongoing = false;
+$(".start-btn").click(function () {
+	if(ongoing == false)
+	{
+		ongoing = true;
+		setTimeout(nextSequence, 1000);
+	}
+});
 $(document).keypress(function () {
 	if(ongoing == false)
 	{
